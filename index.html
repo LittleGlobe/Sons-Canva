@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      overflow: hidden;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+      padding: 5px;
+      font-size: 40px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<button onclick="jouer()">🔊</button>
+
+<audio id="son" src="azuleijo.mp3"></audio>
+
+<script>
+function jouer() {
+  const audio = document.getElementById("son");
+  audio.currentTime = 0;
+  audio.play();
+}
+</script>
+
+</body>
+</html>
